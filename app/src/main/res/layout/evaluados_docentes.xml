@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="407dp"
+            android:layout_height="282dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="120dp"
+                android:layout_height="105dp"
+                android:layout_below="@+id/txtnombre"
+                android:layout_marginTop="2dp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/txtnombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Evaluado"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#673AB7"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblidentificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/txtnombre"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="1dp"
+                android:text="Identificación:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtidentificacion"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/txtnombre"
+                android:layout_marginLeft="218dp"
+                android:layout_marginTop="1dp"
+                android:text="0000000000"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtsituacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txtidentificacion"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="20dp"
+                android:text="correo@gmmail.com"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/lblsituacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtnombre"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="21dp"
+                android:text="Situación:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblgenero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtsituacion"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="1dp"
+                android:text="Género:"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtgenero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtsituacion"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="188dp"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@+id/lblgenero"
+                android:text="Género"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/lblcargo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtgenero"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="1dp"
+                android:text="Cargo:"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtcargo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtgenero"
+                android:layout_marginLeft="168dp"
+                android:layout_marginTop="1dp"
+                android:text="Cargo"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/lblfechainicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtcargo"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="1dp"
+                android:text="Fecha de inicio:"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtfechainicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtcargo"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="168dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/lblfechainicio"
+                android:text="dd-mm-aaaa hh:mm:ss"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/lblfechaFin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtfechainicio"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="1dp"
+                android:text="Fecha fin:"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtfechafin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtfechainicio"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="168dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/lblfechaFin"
+                android:text="dd-mm-aaaa hh:mm:ss"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/lblcalificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtfechafin"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="1dp"
+                android:text="Calificación:"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblcalificacion2"
+                android:layout_width="161dp"
+                android:layout_height="39dp"
+                android:layout_below="@+id/txtfechafin"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="58dp"
+                android:text="EVALUADO"
+                android:textColor="#DD1313"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtcalificacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtfechafin"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="168dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/lblcalificacion"
+                android:text="dd-mm-aaaa hh:mm:ss"
+                android:textColor="#000000" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
